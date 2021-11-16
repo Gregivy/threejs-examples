@@ -46,8 +46,8 @@ function init() {
     controls = new OrbitControls(camera, renderer.domElement);
     controls.autoRotate = true;
     controls.autoRotateSpeed = 2.5;
-    controls.maxDistance = 150;
-    controls.minDistance = 150;
+    controls.maxDistance = 350;
+    controls.minDistance = 350;
     controls.enablePan = false;
 
     const loader = new THREE.TextureLoader();
