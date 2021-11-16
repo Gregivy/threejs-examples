@@ -602,6 +602,8 @@ class Base {
         const controls = new OrbitControls(this.camera, this.renderer.domElement);
         controls.minZoom = 1;
         controls.maxZoom = 2;
+        controls.minDistance = 1;
+        controls.maxDistance = 2;
         const { lookAtPosition } = this;
         controls.target.copy(lookAtPosition);
         controls.update();
