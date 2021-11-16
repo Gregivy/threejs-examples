@@ -600,6 +600,8 @@ class Base {
     // 创建轨道控制
     createOrbitControls() {
         const controls = new OrbitControls(this.camera, this.renderer.domElement);
+        controls.minZoom = 1;
+        controls.maxZoom = 2;
         const { lookAtPosition } = this;
         controls.target.copy(lookAtPosition);
         controls.update();
