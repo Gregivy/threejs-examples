@@ -43,7 +43,7 @@ function init() {
     container.appendChild(renderer.domElement);
 
     //OrbitControl
-    controls = new THREE.OrbitControls(camera, renderer.domElement);
+    controls = new OrbitControls(camera, renderer.domElement);
     controls.autoRotate = true;
     controls.autoRotateSpeed = 4;
     controls.maxDistance = 350;
