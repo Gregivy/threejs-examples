@@ -45,8 +45,8 @@ function init() {
     //OrbitControl
     controls = new OrbitControls(camera, renderer.domElement);
     controls.autoRotate = true;
-    controls.autoRotateSpeed = 4;
-    controls.maxDistance = 350;
+    controls.autoRotateSpeed = 2.5;
+    controls.maxDistance = 150;
     controls.minDistance = 150;
     controls.enablePan = false;
 
