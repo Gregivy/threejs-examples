@@ -1,3 +1,7 @@
+import * as THREE from "https://cdn.skypack.dev/three@0.124.0";
+import { OrbitControls } from "https://cdn.skypack.dev/three@0.124.0/examples/jsm/controls/OrbitControls";
+import { SimplexNoise } from "https://cdnjs.cloudflare.com/ajax/libs/simplex-noise/2.4.0/simplex-noise.min.js";
+
 let renderer,
 scene,
 camera,
