@@ -22,8 +22,9 @@ animate();
 
 function init() {
     scene = new THREE.Scene();
-
-    camera = new THREE.PerspectiveCamera(55, window.innerWidth / window.innerHeight, 0.01, 1000)
+    let width = container.clientWidth;
+    let height = container.clientHeight;
+    camera = new THREE.PerspectiveCamera(55, width / height, 0.01, 1000)
     camera.position.set(0,0,230);
 
     const directionalLight = new THREE.DirectionalLight("#fff", 2);
