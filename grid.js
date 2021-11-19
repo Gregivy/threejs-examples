@@ -457,7 +457,7 @@ void main(){
     
     // 噪声背景
     float noise=hash(newUv+uTime)*.15;
-    color.rgb+=vec3(noise);
+    //color.rgb+=vec3(noise);
     
     gl_FragColor=color;
 }
