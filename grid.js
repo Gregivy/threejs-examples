@@ -551,6 +551,7 @@ class Base {
         const renderer = !useWebGL1
             ? new THREE.WebGLRenderer(config)
             : new THREE.WebGL1Renderer(config);
+        renderer.context.getExtension('OES_standard_derivatives');
         renderer.setSize(this.container.clientWidth, this.container.clientHeight);
         renderer.outputEncoding = outputEncoding;
         this.resizeRendererToDisplaySize();
@@ -830,6 +831,7 @@ class GridIcosahedron extends Base {
             }
         });
         this.gridIcosahedronShapeMaterial = gridIcosahedronShapeMaterial;
+        this.gridIcosahedronShapeMaterial.extensions.derivatives = true; 
     }
     // 创建边框材质
     createGridIcosahedronEdgeMaterial() {
@@ -856,6 +858,7 @@ class GridIcosahedron extends Base {
             }
         });
         this.gridIcosahedronEdgeMaterial = gridIcosahedronEdgeMaterial;
+        this.gridIcosahedronEdgeMaterial.extensions.derivatives = true; 
     }
     // 创建二十面体图形
     createIcoShape() {
