@@ -26,7 +26,7 @@ const getBaryCoord = (bufferGeometry) => {
     const aCenter = new Float32Array(bary);
     bufferGeometry.setAttribute("aCenter", new THREE.BufferAttribute(aCenter, 3));
 };
-const gridIcosahedronTextureUrl = `https://uploads-ssl.webflow.com/618d72a3897b85925a49a68e/6196b553839ce52c5e898d08_cosmos_bg%20(1).jpeg`;
+const gridIcosahedronTextureUrl = `https://images.unsplash.com/photo-1462331940025-496dfbfc7564?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8Nnx8bmFzYXxlbnwwfHwwfHw%3D&w=1000&q=80`;
 const gridIcosahedronShapeVertexShader = `
 #define GLSLIFY 1
 //
